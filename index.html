@@ -3,36 +3,12 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <style>
-    .mySlides {display:none;}
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 30%;
-    }
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-    p.ex1 {
-      margin-left: 250px;
-    }
-  </style>
-  <script>
-    // JavaScript to display the date and time on my webpage
-    const d = new Date();
-    document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById("dateAndTime").textContent = d;
-    });
-  </script>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to an external CSS file for styling -->
+  <script src="script.js"></script> <!-- Link to an external JavaScript file for better maintainability -->
 </head>
 <body>
-  <img src="WEBBANNER.png" alt="Banner" width="1000" height="300">
-  <img src="soil-mechanics.webp" alt="Banner" width="1800" height="300">
+  <img src="WEBBANNER.png" alt="Website Banner" width="1000" height="300">
+  <img src="soil-mechanics.webp" alt="Soil Mechanics Banner" width="1800" height="300">
   <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
   <h2>Student URN: 6811459</h2>
   <hr>
@@ -43,20 +19,20 @@
   <ul>
     <li><a href="#Abstract">Abstract</a></li>
     <li><a href="#Introduction">Introduction</a></li>
-    <li><a href="#AnalysisAndDiscussion">Analysis and discussion</a></li>
+    <li><a href="#AnalysisAndDiscussion">Analysis and Discussion</a></li> <!-- Fixed the anchor text -->
     <li><a href="#References">References</a></li>
   </ul>
 
   <!-- Abstract -->
-  <p class="ex1" id="Abstract">
+  <p class="content" id="Abstract"> <!-- Changed class name to "content" for consistency -->
     ABSTRACT
-    In this paper, I will embark on a journey into the depths of Soil Mechanics, aiming to show its fundamental concepts, principles, and applications.
-    By delving into the intricate world of soil behavior, I hope to contribute to the broader understanding of this critical field, offering insights that
+    In this paper, we embark on a journey into the depths of Soil Mechanics, aiming to explain its fundamental concepts, principles, and applications.
+    By delving into the intricate world of soil behavior, we hope to contribute to a broader understanding of this critical field, offering insights that
     can guide engineering practices, environmental preservation efforts, and scientific exploration.
   </p>
 
   <!-- Introduction -->
-  <p class="ex1" id="Introduction">
+  <p class="content" id="Introduction"> <!-- Changed class name to "content" for consistency -->
     INTRODUCTION
     Soil, as the fundamental foundation of our terrestrial environment, plays a pivotal role in shaping our landscapes, supporting infrastructure, and sustaining life itself.
     Understanding the intricate behavior of soil under various conditions is at the core of the science of Soil Mechanics. This discipline delves into the mechanics and
@@ -67,11 +43,13 @@
     of soil erosion and contamination on our ecosystems.
 
     Importance of Soil Mechanics
-    1. Soil mechanics ensures safe and stable foundation design for structures.
-    2. It analyzes slope stability and prevents landslides and slope failures.
-    3. Soil mechanics guides the design of retaining structures.
-    4. It facilitates the selection and implementation of soil improvement techniques.
-    5. It assesses and mitigates geotechnical hazards.
+    <ol> <!-- Used an ordered list for better readability -->
+      <li>Soil mechanics ensures safe and stable foundation design for structures.</li>
+      <li>It analyzes slope stability and prevents landslides and slope failures.</li>
+      <li>Soil mechanics guides the design of retaining structures.</li>
+      <li>It facilitates the selection and implementation of soil improvement techniques.</li>
+      <li>It assesses and mitigates geotechnical hazards.</li>
+    </ol>
   </p>
 
   <!-- Analysis and Discussion -->
@@ -116,14 +94,14 @@
       <!-- Add more rows for additional soil types -->
     </table>
     <p>
-      The importance of this mechanical analysis of the different capacities of soil tells us numerous things that an Engineer will take into account when designing the placement
+      The mechanical analysis of the different capacities of soil is crucial for engineers when designing the placement
       of a structure.
     </p>
   </div>
 
   <!-- References -->
   <div id="References">
-    REFERENCES
+    <h2>REFERENCES</h2> <!-- Used an h2 element for better hierarchy -->
     <ol>
       <li>Mitchell, J.K., and Soga, K. (2005) Fundamentals of soil behavior, Third edition, John Wiley and Sons, Inc., ISBN 978-0-471-46302-3</li>
       <li>Santamarina, J.C., Klein, K.A., & Fam, M.A. (2001). Soils and Waves: Particulate Materials Behavior, Characterization and Process Monitoring. Wiley. ISBN 978-0-471-49058-6</li>
@@ -133,5 +111,6 @@
   </div>
 
   <p id="dateAndTime"></p>
-</
+</body>
+</html>
 
