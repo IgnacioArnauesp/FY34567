@@ -5,9 +5,6 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
     .mySlides {display:none;}
-  </style>
-
-  <style>
     table {
       font-family: arial, sans-serif;
       border-collapse: collapse;
@@ -21,14 +18,17 @@
     tr:nth-child(even) {
       background-color: #dddddd;
     }
-  </style>
-
-  <style>
     p.ex1 {
       margin-left: 250px;
     }
   </style>
-
+  <script>
+    // JavaScript to display the date and time on my webpage
+    const d = new Date();
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("dateAndTime").textContent = d;
+    });
+  </script>
 </head>
 <body>
   <img src="WEBBANNER.png" alt="Banner" width="1000" height="300">
@@ -40,107 +40,98 @@
   <hr>
 
   <!-- Table of contents -->
-  <table>
-    <tr>
-      <th><h3>Table of contents</h3></th>
-    </tr>
-    <tr>
-      <td><a href="#Abstract">Abstract</a></td>
-    </tr>
-    <tr>
-      <td><a href="#Introduction">Introduction</a></td>
-    </tr>
-    <tr>
-      <td><a href="#AnalysisAndDiscussion">Analysis and discussion</a></td>
-    </tr>
-    <tr>
-      <td><a href="#References">References</a></td>
-    </tr>
-  </table>
+  <ul>
+    <li><a href="#Abstract">Abstract</a></li>
+    <li><a href="#Introduction">Introduction</a></li>
+    <li><a href="#AnalysisAndDiscussion">Analysis and discussion</a></li>
+    <li><a href="#References">References</a></li>
+  </ul>
 
   <!-- Abstract -->
   <p class="ex1" id="Abstract">
-    <pre>
-      ABSTRACT
-      In this paper, I will embark on a journey into the depths of Soil Mechanics, aiming to show its fundamental concepts, principles, and applications.
-      By delving into the intricate world of soil behavior, I hope to contribute to the broader understanding of this critical field, offering insights that
-      can guide engineering practices, environmental preservation efforts, and scientific exploration.
-    </pre>
+    ABSTRACT
+    In this paper, I will embark on a journey into the depths of Soil Mechanics, aiming to show its fundamental concepts, principles, and applications.
+    By delving into the intricate world of soil behavior, I hope to contribute to the broader understanding of this critical field, offering insights that
+    can guide engineering practices, environmental preservation efforts, and scientific exploration.
   </p>
 
   <!-- Introduction -->
   <p class="ex1" id="Introduction">
-    <pre>
-      INTRODUCTION
-      Soil, as the fundamental foundation of our terrestrial environment, plays a pivotal role in shaping our landscapes, supporting infrastructure, and sustaining life itself.
-      Understanding the intricate behavior of soil under various conditions is at the core of the science of Soil Mechanics. This discipline delves into the mechanics and
-      physical properties of soils, unveiling the complex interactions between soil particles, moisture content, and external forces.
+    INTRODUCTION
+    Soil, as the fundamental foundation of our terrestrial environment, plays a pivotal role in shaping our landscapes, supporting infrastructure, and sustaining life itself.
+    Understanding the intricate behavior of soil under various conditions is at the core of the science of Soil Mechanics. This discipline delves into the mechanics and
+    physical properties of soils, unveiling the complex interactions between soil particles, moisture content, and external forces.
 
-      The significance of Soil Mechanics extends far beyond its academic realm. Engineers rely on its principles to design stable foundations for buildings, bridges, and dams,
-      while geologists use it to decipher the Earth's history through the study of soil layers. Moreover, environmental scientists employ Soil Mechanics to assess the impact
-      of soil erosion and contamination on our ecosystems.
+    The significance of Soil Mechanics extends far beyond its academic realm. Engineers rely on its principles to design stable foundations for buildings, bridges, and dams,
+    while geologists use it to decipher the Earth's history through the study of soil layers. Moreover, environmental scientists employ Soil Mechanics to assess the impact
+    of soil erosion and contamination on our ecosystems.
 
-      Importance of Soil Mechanics
-      1. Soil mechanics ensures safe and stable foundation design for structures.
-      2. It analyzes slope stability and prevents landslides and slope failures.
-      3. Soil mechanics guides the design of retaining structures.
-      4. It facilitates the selection and implementation of soil improvement techniques.
-      5. It assesses and mitigates geotechnical hazards.
-    </pre>
+    Importance of Soil Mechanics
+    1. Soil mechanics ensures safe and stable foundation design for structures.
+    2. It analyzes slope stability and prevents landslides and slope failures.
+    3. Soil mechanics guides the design of retaining structures.
+    4. It facilitates the selection and implementation of soil improvement techniques.
+    5. It assesses and mitigates geotechnical hazards.
   </p>
 
   <!-- Analysis and Discussion -->
-  <p class="ex1" id="AnalysisAndDiscussion">
-    <pre>
-      ANALYSIS AND DISCUSSION
-      <img src="soil-bearing-capacities-n.jpg" alt="Banner" width="400" height="200">
+  <div id="AnalysisAndDiscussion">
+    <h1>Soil Bearing Capacities</h1>
+    <table>
+      <tr>
+        <th>Soil Type</th>
+        <th>Load Capacity (kN/m²)</th>
+        <th>Drainage</th>
+      </tr>
+      <tr>
+        <td>Clay</td>
+        <td>100</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <td>Silt</td>
+        <td>150</td>
+        <td>Moderate</td>
+      </tr>
+      <tr>
+        <td>Sand</td>
+        <td>250</td>
+        <td>Excellent</td>
+      </tr>
+      <tr>
+        <td>Gravel</td>
+        <td>350</td>
+        <td>Excellent</td>
+      </tr>
+      <tr>
+        <td>Loam</td>
+        <td>200</td>
+        <td>Moderate</td>
+      </tr>
+      <tr>
+        <td>Rock</td>
+        <td>500</td>
+        <td>Excellent</td>
+      </tr>
+      <!-- Add more rows for additional soil types -->
+    </table>
+    <p>
       The importance of this mechanical analysis of the different capacities of soil tells us numerous things that an Engineer will take into account when designing the placement
       of a structure.
-    </pre>
-  </p>
+    </p>
+  </div>
 
   <!-- References -->
-  <p class="ex1" id="References">
-    <pre>
-      REFERENCES
-      1. Mitchell, J.K., and Soga, K. (2005) Fundamentals of soil behavior, Third edition, John Wiley and Sons, Inc., ISBN 978-0-471-46302-3
-      2. Santamarina, J.C., Klein, K.A., & Fam, M.A. (2001). Soils and Waves: Particulate Materials Behavior, Characterization and Process Monitoring. Wiley. ISBN 978-0-471-49058-6
-      3. Powrie, W., Spon Press, 2004, Soil Mechanics – 2nd ed ISBN 0-415-31156-X
-      4. A Guide to Soil Mechanics, Bolton, Malcolm, Macmillan Press, 1979. ISBN 0-333-18931-0
-    </pre>
-  </p>
+  <div id="References">
+    REFERENCES
+    <ol>
+      <li>Mitchell, J.K., and Soga, K. (2005) Fundamentals of soil behavior, Third edition, John Wiley and Sons, Inc., ISBN 978-0-471-46302-3</li>
+      <li>Santamarina, J.C., Klein, K.A., & Fam, M.A. (2001). Soils and Waves: Particulate Materials Behavior, Characterization and Process Monitoring. Wiley. ISBN 978-0-471-49058-6</li>
+      <li>Powrie, W., Spon Press, 2004, Soil Mechanics – 2nd ed ISBN 0-415-31156-X</li>
+      <li>A Guide to Soil Mechanics, Bolton, Malcolm, Macmillan Press, 1979. ISBN 0-333-18931-0</li>
+    </ol>
+  </div>
 
   <p id="dateAndTime"></p>
-  <script>
-    // JavaScript to display the date and time on my webpage
-    const d = new Date();
-    document.getElementById("dateAndTime").innerHTML = d;
-  </script>
-</body>
+</
 
-<head>
-    <title>Table Example</title>
-</head>
-<body>
-    <table border="1">
-        <tr>
-            <th>Column 1 Header</th>
-            <th>Column 2 Header</th>
-            <th>Column 3 Header</th>
-            <!-- Add more header columns if needed -->
-        </tr>
-        <tr>
-            <td>Row 1, Column 1</td>
-            <td>Row 1, Column 2</td>
-            <td>Row 1, Column 3</td>
-        </tr>
-        <tr>
-            <td>Row 2, Column 1</td>
-            <td>Row 2, Column 2</td>
-            <td>Row 2, Column 3</td>
-        </tr>
-        <!-- Add more rows and data as needed -->
-    </table>
-</body>
-</html>
-  
